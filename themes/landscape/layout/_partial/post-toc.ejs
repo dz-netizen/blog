@@ -1,0 +1,10 @@
+<% if ((typeof is_post === 'function' && is_post()) || (page && page.layout === 'post')) { %>
+  <aside id="post-toc" aria-label="Table of contents">
+    <div class="widget-wrap">
+      <h3 class="widget-title">目录</h3>
+      <div class="widget widget-toc">
+        <nav class="post-toc-nav"></nav>
+      </div>
+    </div>
+  </aside>
+<% } %>

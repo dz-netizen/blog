@@ -1,0 +1,61 @@
+#post-toc
+  display: none
+
+  @media mq-normal
+    display: block
+    position: fixed
+    left: 10px
+    top: 120px
+    width: 240px
+    z-index: 2
+
+    .widget-wrap
+      margin: 0
+
+    .widget
+      max-height: calc(90vh - 200px)
+      overflow: auto
+.post-toc-nav
+  ul
+    margin: 0
+    padding-left: 0
+    list-style: none
+
+  li
+    margin: 6px 0
+
+    > ul
+      margin: 6px 0 0
+      padding-left: 12px
+
+    &.is-collapsed
+      > ul
+        display: none
+
+  a
+    text-decoration: none
+    &:hover
+      text-decoration: underline
+
+  .toc-toggle
+    appearance: none
+    border: 0
+    background: none
+    padding: 0
+    margin-right: 6px
+    cursor: pointer
+    color: inherit
+    opacity: 0.75
+
+    &:hover
+      opacity: 1
+
+    .fa
+      display: inline-block
+      font-size: 12px
+      transition: transform 0.15s ease
+
+  li.is-collapsed
+    > .toc-toggle
+      .fa
+        transform: rotate(-90deg)
